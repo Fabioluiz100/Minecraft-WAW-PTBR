@@ -5,7 +5,7 @@ scoreboard players set diagonAlleyDoorState global 0
 kill @e[type=minecraft:armor_stand,tag=Brick,distance=..10,x=2848,y=56,z=800]
 
 # Summon baseline Armorstand. Used for wall positioning & TPS counter
-execute positioned 2848 56 800 run summon minecraft:armor_stand ~ ~ ~ {Marker:1,NoGravity:1,Invisible:1,CustomName:"{\"text\":\"AlleyPosition\"}",Tags:["Brick","Closing"]}
+execute positioned 2848 56 800 run summon minecraft:armor_stand ~ ~ ~ {Marker:1,NoGravity:1,Invisible:1,CustomName:"{\"text\":\"AlleyPosition\"}",Tags:["Brick","Fechando"]}
 
 
 # Summon brick models

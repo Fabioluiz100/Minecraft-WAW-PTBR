@@ -5,7 +5,7 @@ execute as @e[tag=pathIndicator] if score @s PathID = @e[tag=moveToPathEngine,li
 execute if entity @e[tag=moveToPathTarget] run tp @e[tag=moveToPathEngine,limit=1] @e[tag=moveToPathTarget,limit=1]
 execute if entity @e[tag=moveToPathTarget] run scoreboard players set @e[tag=focusNPCActor,tag=npc,tag=fpActor] targetPathPoint 0
 execute if entity @e[tag=moveToPathTarget] as @e[tag=focusNPCActor,tag=npc,tag=fpActor] store result entity @s ArmorItems[3].tag.targetPathPoint int 1 run scoreboard players get @s targetPathPoint
-execute unless entity @e[tag=moveToPathTarget] run tellraw @a ["",{"text":"Can't find path point. Try moving closer to it to load it.","color":"red"}]
+execute unless entity @e[tag=moveToPathTarget] run tellraw @a ["",{"text":"Não foi possível encontrar o ponto do caminho. Tente se aproximar dele para carregá-lo.","color":"red"}]
 
 execute if entity @e[tag=moveToPathTarget] as @e[tag=moveToPathEngine,limit=1] at @s run function hp:npc/read_path_point
 execute if entity @e[tag=moveToPathTarget] as @e[tag=moveToPathEngine,limit=1] at @s run tag @s remove stop

@@ -5,10 +5,10 @@ execute as @s run playsound minecraft:custom.ui.inventory.interaction.open_inven
 tag @s add showBossbarHeader
 function hp:misc/update_bossbars
 
-execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Cauldron","bold":true,"color":"gray"}
-execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Cauldron","bold":true,"color":"gray"}
-execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Cauldron","bold":true,"color":"gray"}
-execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Cauldron","bold":true,"color":"gray"}
+execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Caldeirão","bold":true,"color":"gray"}
+execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Caldeirão","bold":true,"color":"gray"}
+execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Caldeirão","bold":true,"color":"gray"}
+execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Caldeirão","bold":true,"color":"gray"}
 
 tag @e[tag=inventory] remove inventory
 execute as @s[scores={playerID=1}] run tag @e[tag=player1Inventory] add inventory

@@ -16,9 +16,9 @@ execute as @s[scores={fastTravelTimer=69}] run function hp:misc/update_bossbars
 
 execute as @s[scores={fastTravelTimer=85}] run title @s times 20 35 20
 execute as @s[scores={fastTravelTimer=85}] run function hp:tools/fast_travel_name
-execute as @s[scores={fastTravelTimer=85}] run title @s title {"text":"Traveling to","color":"gray"}
+execute as @s[scores={fastTravelTimer=85}] run title @s title {"text":"Viajar para","color":"gray"}
 
-# im too lazy to add seperate tags and change all the reference. these refer to map and conversation, and have nothing to do with inventory.
+# Estou com preguiça de adicionar tags separadas e alterar todas as referências. Elas se referem ao mapa e à conversa, e não têm nada a ver com o inventário.
 tag @s[tag=inMap,scores={fastTravelTimer=1}] add exitInventory
 tag @s[tag=inConversation,scores={fastTravelTimer=1}] add exitConversation
 

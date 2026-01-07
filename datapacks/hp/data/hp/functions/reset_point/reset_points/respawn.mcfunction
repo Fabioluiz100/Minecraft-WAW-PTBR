@@ -5,7 +5,7 @@ execute as @s[scores={resetPointTimer=2}] run team join Creature @s
 
 # Title defeated
 execute as @s[scores={resetPointTimer=11}] run title @s times 20 100 20
-execute as @s[scores={resetPointTimer=11}] run title @s subtitle {"text":"Defeated","color":"gray"}
+execute as @s[scores={resetPointTimer=11}] run title @s subtitle {"text":"Derrotado","color":"gray"}
 execute as @s[scores={resetPointTimer=11}] run title @s title {"text":""}
 
 execute as @s[scores={resetPointTimer=11}] run effect give @s minecraft:resistance 100 255 true

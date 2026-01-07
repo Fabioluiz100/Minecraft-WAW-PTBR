@@ -11,16 +11,16 @@ execute as @s if entity @s[nbt={Inventory:[{Slot:-106b,tag:{altFDetect:1b}}]}] r
 
 # Copy paste Path ID
 execute as @s[tag=hasPressedF,scores={pathIndicator=7},tag=!isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] store result block ~ 0 ~ Items[0].tag.Enchantments[5].lvl int 1 run scoreboard players operation @e[tag=hover,limit=1,tag=pathIndicator] PathID = @s CopyPathID
-execute as @s[tag=hasPressedF,scores={pathIndicator=7},tag=!isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"Pasted path ID","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathID"},"bold":true,"color":"gold"}]
+execute as @s[tag=hasPressedF,scores={pathIndicator=7},tag=!isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"ID do caminho colado","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathID"},"bold":true,"color":"gold"}]
 execute as @s[tag=hasPressedF,scores={pathIndicator=7},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run scoreboard players operation @s CopyPathID = @e[tag=hover,limit=1,tag=pathIndicator] PathID
-execute as @s[tag=hasPressedF,scores={pathIndicator=7},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"Copied Path ID","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathID"},"bold":true,"color":"gold"}]
+execute as @s[tag=hasPressedF,scores={pathIndicator=7},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"ID do caminho copiado","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathID"},"bold":true,"color":"gold"}]
 
 
 # Copy paste point ID
 execute as @s[tag=hasPressedF,scores={pathIndicator=6},tag=!isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] store result block ~ 0 ~ Items[0].tag.Enchantments[4].lvl int 1 run scoreboard players operation @e[tag=hover,limit=1,tag=pathIndicator] PathPointID = @s CopyPathPointID
-execute as @s[tag=hasPressedF,scores={pathIndicator=6},tag=!isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"Pasted path point ID","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathPointID"},"bold":true,"color":"gold"}]
+execute as @s[tag=hasPressedF,scores={pathIndicator=6},tag=!isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"ID do ponto de caminho colado","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathPointID"},"bold":true,"color":"gold"}]
 execute as @s[tag=hasPressedF,scores={pathIndicator=6},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run scoreboard players operation @s CopyPathPointID = @e[tag=hover,limit=1,tag=pathIndicator] PathPointID
-execute as @s[tag=hasPressedF,scores={pathIndicator=6},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"Copied path point ID","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathPointID"},"bold":true,"color":"gold"}]
+execute as @s[tag=hasPressedF,scores={pathIndicator=6},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] run tellraw @s ["",{"text":"ID do ponto de caminho copiado","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=hover,limit=1,tag=pathIndicator]","objective":"PathPointID"},"bold":true,"color":"gold"}]
 
 scoreboard players set @e[tag=hover,limit=1,tag=pathIndicator] tmp 0
 execute as @s[tag=hasPressedF,scores={pathIndicator=5}] as @e[tag=hover,limit=1,tag=pathIndicator,scores={pathEnding=0,tmp=0}] at @s store success score @s tmp store result block ~ 0 ~ Items[0].tag.Enchantments[6].lvl int 1 run scoreboard players set @s pathEnding 1
@@ -36,9 +36,9 @@ execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=!isSneaking] at @e[ta
 execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=isSneaking] at @e[tag=hover,limit=1,tag=pathIndicator] store result block ~ 0 ~ Items[0].tag.Enchantments[5].lvl int 1 run scoreboard players remove @e[tag=hover,limit=1,tag=pathIndicator] PathID 1
 
 execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=!isSneaking] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] run scoreboard players add @s PathID 1
-execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=!isSneaking] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] run tellraw @a ["",{"text":"ID set to","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"PathID"},"bold":true,"color":"gold"}]
+execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=!isSneaking] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] run tellraw @a ["",{"text":"ID definido para","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"PathID"},"bold":true,"color":"gold"}]
 execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=isSneaking] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] run scoreboard players remove @s PathID 1
-execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=isSneaking] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] run tellraw @a ["",{"text":"ID set to","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"PathID"},"bold":true,"color":"gold"}]
+execute as @s[tag=hasPressedF,scores={pathIndicator=3},tag=isSneaking] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] run tellraw @a ["",{"text":"ID definido para","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@s","objective":"PathID"},"bold":true,"color":"gold"}]
 execute as @s[tag=hasPressedF,scores={pathIndicator=3}] at @e[tag=hover,limit=1,tag=fpActor] as @e[tag=fpEngine,limit=1,sort=nearest,distance=..1] store result entity @s ArmorItems[3].tag.PathID int 1 run scoreboard players get @s PathID
 
 execute as @s[tag=hasPressedF,scores={pathIndicator=2}] at @e[tag=hover,tag=pathIndicator] run setblock ~ 0 ~ bedrock
@@ -46,7 +46,7 @@ execute as @s[tag=hasPressedF,scores={pathIndicator=2}] at @e[tag=hover,tag=path
 execute as @s[tag=hasPressedF,scores={pathIndicator=2}] run kill @e[tag=hover,tag=pathIndicator]
 
 
-execute as @s[tag=hasPressedF,scores={pathIndicator=1}] run data merge entity @e[tag=hover,limit=1,tag=pathIndicator,name=600] {CustomName:"{\"text\":\"reset\"}"}
+execute as @s[tag=hasPressedF,scores={pathIndicator=1}] run data merge entity @e[tag=hover,limit=1,tag=pathIndicator,name=600] {CustomName:"{\"text\":\"resetar\"}"}
 execute as @s[tag=hasPressedF,scores={pathIndicator=1}] run scoreboard players set @e[tag=hover,limit=1,tag=pathIndicator,name=400,tag=pathIndicator] idle 600
 execute as @s[tag=hasPressedF,scores={pathIndicator=1}] run data merge entity @e[tag=hover,limit=1,tag=pathIndicator,name=400] {CustomName:"{\"text\":\"600\"}"}
 execute as @s[tag=hasPressedF,scores={pathIndicator=1}] run scoreboard players set @e[tag=hover,limit=1,tag=pathIndicator,name=200,tag=pathIndicator] idle 400
@@ -100,7 +100,7 @@ execute as @s[tag=hasPressedQ,scores={pathIndicator=8..}] run scoreboard players
 
 
 
-replaceitem entity @s hotbar.1 minecraft:endermite_spawn_egg{display:{Name:"{\"text\":\"Set NPC path point\",\"color\":\"gold\",\"bold\":true}"},EntityTag:{Tags:["npcPathPoint"]},qDetect:1b,altFDetect:1b} 1
+replaceitem entity @s hotbar.1 minecraft:endermite_spawn_egg{display:{Name:"{\"text\":\"Definir ponto de caminho do NPC\",\"color\":\"gold\",\"bold\":true}"},EntityTag:{Tags:["npcPathPoint"]},qDetect:1b,altFDetect:1b} 1
 # replaceitem entity @s hotbar.2 minecraft:air
 # replaceitem entity @s hotbar.3 minecraft:air
 # replaceitem entity @s hotbar.4 minecraft:air

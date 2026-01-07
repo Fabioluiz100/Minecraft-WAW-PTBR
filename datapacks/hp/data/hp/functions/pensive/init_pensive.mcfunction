@@ -4,11 +4,11 @@ execute as @s run playsound minecraft:custom.ui.learn.potion_brewed master @a ~ 
 tag @s add showBossbarHeader
 function hp:misc/update_bossbars
 
-# Oops it's spelled Pensieve
-execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Pensieve","bold":true,"color":"gray"}
-execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Pensieve","bold":true,"color":"gray"}
-execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Pensieve","bold":true,"color":"gray"}
-execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Pensieve","bold":true,"color":"gray"}
+# Oops it's spelled Pensativo
+execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Pensativo","bold":true,"color":"gray"}
+execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Pensativo","bold":true,"color":"gray"}
+execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Pensativo","bold":true,"color":"gray"}
+execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Pensativo","bold":true,"color":"gray"}
 
 tag @e[tag=inventory] remove inventory
 execute as @s[scores={playerID=1}] run tag @e[tag=player1Inventory] add inventory

@@ -9,7 +9,7 @@ execute as @s[tag=inLetter] run function hp:misc/read_hogwarts_letter/exit_read_
 execute as @s[tag=inWingardium] run tag @s add wingardiumExit
 execute as @s[tag=inAppiration] run tag @s add exitApparition
 
-# Hack to prevent issue with being stunned by dark spirit
+# Dica para evitar problemas com atordoamento causado por espíritos malignos
 scoreboard players set @s darkSpiritStun 0
 tag @s remove stunnedByDarkSpirit
 

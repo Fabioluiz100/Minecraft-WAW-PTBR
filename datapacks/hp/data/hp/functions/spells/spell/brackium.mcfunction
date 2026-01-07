@@ -1,7 +1,7 @@
 # Mana
 scoreboard players remove @s manaAmount 2000
 tag @s add anim_alohomora
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["spellEntity","BrackiumArea","BrackiumInit"],CustomName:"{\"text\":\"BrackiumArea\"}"}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["spellEntity","BrackiumArea","BrackiumInit"],CustomName:"{\"text\":\"Área de Brackium\"}"}
 scoreboard players set @e[tag=BrackiumInit] idle 300
 scoreboard players set @s spellCooldown2 328
 scoreboard players set @e[tag=BrackiumInit] tmp 0

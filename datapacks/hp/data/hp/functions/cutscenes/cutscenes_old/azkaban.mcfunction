@@ -58,7 +58,7 @@ execute as @s[scores={cutSceneTimer=-100},tag=cutsceneLeader] run time set midni
 # Title
 execute as @s[scores={cutSceneTimer=-130}] run title @s times 15 35 1
 execute as @s[scores={cutSceneTimer=-130}] run title @s subtitle ["",{"text":"Azkaban","bold":true,"color":"gold"}]
-execute as @s[scores={cutSceneTimer=-130}] run title @s title {"text":"Traveling to","color":"gray"}
+execute as @s[scores={cutSceneTimer=-130}] run title @s title {"text":"Viajar para","color":"gray"}
 
 
 

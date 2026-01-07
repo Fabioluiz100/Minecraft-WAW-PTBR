@@ -27,18 +27,18 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hm? See anything to your liking? \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hum? Viu algo do seu agrado? \\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the moving portraits \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre os retratos em movimento. \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ Goodbye\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adeus\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 
@@ -62,7 +62,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well. I first became interested in these moving portraits during my time at Hogwarts. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Bem, meu interesse por esses retratos em movimento começou durante meu período em Hogwarts. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -93,7 +93,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" As you know, many portraits in the wizarding world are able to talk and move around. They behave like their subjects. However, the degree to which they can interact with the people looking at them depends not on the skill of the painter, but on the power of the witch or wizard painted. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Como você sabe, muitos retratos no mundo bruxo são capazes de falar e se mover. Eles se comportam como seus retratados. No entanto, o grau de interação que eles podem ter com as pessoas que os observam depende não da habilidade do pintor, mas do poder da bruxa ou do bruxo retratado. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -124,7 +124,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" When a magical portrait is painted, the artist will naturally use enchantments to ensure that the painting will be able to move. The portrait will be able to use some of the subject's favourite phrases and imitate their general demeanour, as perceived by the artist. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ao pintar um retrato mágico, o artista naturalmente utiliza encantamentos para garantir que a pintura seja capaz de se mover. O retrato poderá usar algumas das frases favoritas do retratado e imitar seu comportamento geral, conforme percebido pelo artista. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -155,7 +155,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" As such, none of these portraits would be capable of having a particularly in-depth discussion about more complex aspects of their lives: they are literally and metaphorically two-dimensional. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Sendo assim, nenhum desses retratos seria capaz de sustentar uma discussão particularmente aprofundada sobre aspectos mais complexos de suas vidas: eles são, literal e metaforicamente, bidimensionais. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -186,7 +186,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Some magical portraits are capable of considerably more interaction with the living world. Traditionally, a headmaster or headmistress is painted before their death. This gives them time to impart their wisdom, useful memories and pieces of knowledge that may then be shared through the centuries with their successors in office. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alguns retratos mágicos são capazes de uma interação consideravelmente maior com o mundo dos vivos. Tradicionalmente, um diretor ou diretora é retratado(a) antes de sua morte. Isso lhes dá tempo para transmitir sua sabedoria, memórias úteis e conhecimentos que podem então ser compartilhados ao longo dos séculos com seus sucessores no cargo. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -218,7 +218,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The depth of knowledge and insight contained in some of the headmasters' and headmistresses' portraits is unknown to any but the incumbents of the office and perhaps a few students, who have realised, over the centuries, that the portraits' apparent sleepiness when visitors arrive in the office is not necessarily genuine. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A profundidade do conhecimento e da perspicácia contida em alguns dos retratos de diretores e diretoras é desconhecida para todos, exceto para os ocupantes do cargo e talvez alguns alunos, que perceberam, ao longo dos séculos, que a aparente sonolência dos retratos quando os visitantes chegam ao escritório não é necessariamente genuína. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -16,7 +16,7 @@ execute at @s as @p[tag=isSneaking,tag=p] store result block ~ 0 ~ Items[0].tag.
 execute store result block ~ 0 ~ Items[0].tag.Enchantments[6].lvl int 1 run scoreboard players set @e[tag=npcPathPoint,limit=1] pathEnding 0
 
 
-tellraw @p[tag=p] ["",{"text":"Placed Path on Path ","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=npcPathPoint,limit=1]","objective":"PathID"},"bold":true,"color":"gold"},{"text":" with point ID ","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=npcPathPoint,limit=1]","objective":"PathPointID"},"bold":true,"color":"gold"}]
+tellraw @p[tag=p] ["",{"text":"Caminho colocado no caminho ","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=npcPathPoint,limit=1]","objective":"PathID"},"bold":true,"color":"gold"},{"text":" com ID de ponto ","color":"white"},{"text":" ","color":"white"},{"score":{"name":"@e[tag=npcPathPoint,limit=1]","objective":"PathPointID"},"bold":true,"color":"gold"}]
 
 
 kill @s

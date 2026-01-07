@@ -12,14 +12,14 @@ execute as @s[tag=!isContainer,tag=!editAddItems,tag=!editRemoveItems,scores={pl
 execute as @s[tag=!buy,tag=!sell] run tag @s add showBossbarHeader
 execute as @s[tag=!buy,tag=!sell] run function hp:misc/update_bossbars
 # This could probably be done differently to support any number of players
-execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Inventory","bold":true,"color":"gray"}
-execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Inventory","bold":true,"color":"gray"}
-execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Inventory","bold":true,"color":"gray"}
-execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Inventory","bold":true,"color":"gray"}
-execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Container","bold":true,"color":"gray"}
-execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Container","bold":true,"color":"gray"}
-execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Container","bold":true,"color":"gray"}
-execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Container","bold":true,"color":"gray"}
+execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Inventário","bold":true,"color":"gray"}
+execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Inventário","bold":true,"color":"gray"}
+execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Inventário","bold":true,"color":"gray"}
+execute as @s[tag=!isContainer,tag=!buy,tag=!sell,scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Inventário","bold":true,"color":"gray"}
+execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Recipiente","bold":true,"color":"gray"}
+execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Recipiente","bold":true,"color":"gray"}
+execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Recipiente","bold":true,"color":"gray"}
+execute as @s[tag=isContainer,tag=!buy,tag=!sell,scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Recipiente","bold":true,"color":"gray"}
 execute as @s[scores={playerID=1}] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["initInvPlController","invPlControllerPlayer1"],CustomName:"{\"text\":\"plController\"}",UUID:[I;0,12,0,1]}
 execute as @s[scores={playerID=2}] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["initInvPlController","invPlControllerPlayer2"],CustomName:"{\"text\":\"plController\"}",UUID:[I;0,12,0,2]}
 execute as @s[scores={playerID=3}] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["initInvPlController","invPlControllerPlayer3"],CustomName:"{\"text\":\"plController\"}",UUID:[I;0,12,0,3]}

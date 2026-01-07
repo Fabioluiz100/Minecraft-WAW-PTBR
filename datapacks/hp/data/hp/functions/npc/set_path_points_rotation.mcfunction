@@ -12,7 +12,7 @@ execute at @s run function hp:npc/edit_path_xz_distance
 
 execute at @s store result block ~ 0 ~ Items[0].tag.Enchantments[2].lvl int 1 run scoreboard players get @s pathPoint_dx
 execute at @s store result block ~ 0 ~ Items[0].tag.Enchantments[3].lvl int 1 run scoreboard players get @s pathPoint_dz
-tellraw @a ["",{"text":"Displacement of path point ","color":"white"},{"score":{"name":"@s","objective":"PathPointID"},"bold":true,"color":"gold"},{"text":" has been set to ","color":"white"},{"text":" (","color":"white"},{"score":{"name":"@s","objective":"pathPoint_dx"},"color":"yellow"},{"text":" ## ","color":"white"},{"score":{"name":"@s","objective":"pathPoint_dz"},"color":"yellow"},{"text":")","color":"white"}]
+tellraw @a ["",{"text":"Deslocamento do ponto de trajetória ","color":"white"},{"score":{"name":"@s","objective":"PathPointID"},"bold":true,"color":"gold"},{"text":" foi definido para ","color":"white"},{"text":" (","color":"white"},{"score":{"name":"@s","objective":"pathPoint_dx"},"color":"yellow"},{"text":" ## ","color":"white"},{"score":{"name":"@s","objective":"pathPoint_dz"},"color":"yellow"},{"text":")","color":"white"}]
 
 
 

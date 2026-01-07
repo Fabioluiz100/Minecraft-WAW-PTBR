@@ -30,7 +30,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Hello! I am \"},{\"text\":\"Professor Minerva McGonagall\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\". I'll be teaching your Transfiguration classes.\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Olá! Eu sou \"},{\"text\":\"Professor Minerva McGonagall\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\". Eu darei as aulas de Transfiguração.\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -68,7 +68,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" How can I help you? \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Como posso ajudá-lo? \\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -78,7 +78,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ I have a question\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ Goodbye\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adeus\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 
@@ -102,7 +102,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What do you wish to know?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" O que você deseja saber?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 
@@ -110,25 +110,25 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Transfiguration\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre a Transfiguração.\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Who taught you Transfiguration?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Quem te ensinou Transfiguração?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Gryffindor House?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre a Casa Grifinória?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Which house did you belong to?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ A qual casa você pertencia?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 7
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Quidditch\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre o Quadribol.\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 8
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ What can you tell me about Animagi?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ O que você pode me dizer sobre Animagi?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 9
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"There's something else\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"Há algo mais\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=7}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 
@@ -152,7 +152,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Transfiguration is a branch of magic that focuses on the alteration of the form or appearance of an object, via the alteration of the object's molecular structure. Transfiguration can be done to most objects, and is also regarded as very hard work and more scientific than any other form of magic.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Transfiguração é um ramo da magia que se concentra na alteração da forma ou aparência de um objeto, através da alteração de sua estrutura molecular. A transfiguração pode ser feita na maioria dos objetos e é considerada um trabalho árduo e mais científico do que qualquer outra forma de magia.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -184,7 +184,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I was taught by Albus Dumbledore who taught Transfiguration at the time. This is also when I became an Animagus. By the end of my education I had won the 'Transfiguration Today Most Promising Newcomer' award, and I went on to teach Transfiguration at Hogwarts. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fui aluno de Alvo Dumbledore, que lecionava Transfiguração na época. Foi também nessa época que me tornei um Animago. Ao final dos meus estudos, ganhei o prêmio de "Revelação Mais Promissora da Transfiguração" da revista "Transfiguration Today" e passei a lecionar Transfiguração em Hogwarts. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -216,7 +216,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm head of Gryffindor House. Students sorted into Gryffindor possess such character traits as courage, chivalry, and determination. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Sou o chefe da Casa Grifinória. Os alunos selecionados para a Grifinória possuem características como coragem, cavalheirismo e determinação. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -248,7 +248,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Gryffindor was founded by Godric Gryffindor. He was an English wizard. He was great friends with Salazar Slytherin, but opposed him when he later thought that they should not accept Muggle-born students at Hogwarts. In his honour Gryffindor's birthplace became known as Godric's Hollow. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A Grifinória foi fundada por Godric Gryffindor, um bruxo inglês. Ele era grande amigo de Salazar Slytherin, mas se opôs a ele quando este passou a defender que Hogwarts não aceitasse alunos nascidos trouxas. Em sua homenagem, o local de nascimento de Gryffindor ficou conhecido como Vale de Godric. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -280,7 +280,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I was sorted into Gryffindor House, although during my sorting, I proved to be a hatstall; the Sorting Hat spent five-and-a-half minutes wavering between Gryffindor and Ravenclaw before deciding to place me in the former. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fui selecionada para a Casa Grifinória, embora durante o processo de seleção eu tenha me mostrado uma indecisa; o Chapéu Seletor passou cinco minutos e meio oscilando entre Grifinória e Corvinal antes de decidir me colocar na primeira. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -314,7 +314,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" During my school years at Hogwarts I was a player of the Gryffindor Quidditch team. However, while playing, I suffered a number of serious injuries, that forced me to give up playing. This is also the reason for my passionate desire for Gryffindor to win the Quidditch Cup over Slytherin! \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Durante meus anos em Hogwarts, eu jogava no time de Quadribol da Grifinória. No entanto, enquanto jogava, sofri várias lesões graves que me obrigaram a parar. Essa é também a razão do meu desejo ardente de que a Grifinória ganhe a Taça de Quadribol contra a Sonserina! \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -347,7 +347,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" An Animagus is a witch or wizard who can morph him or herself into an animal at will. It takes skill, practice, and patience, and the process of becoming an Animagus is long and arduous, and has the potential to backfire and cause the transformation to go horribly wrong. I, an Animagus myself, can transform into a cat.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Um Animago é uma bruxa ou um bruxo que pode se transformar em um animal à vontade. Isso exige habilidade, prática e paciência, e o processo para se tornar um Animago é longo e árduo, com potencial para dar errado e fazer com que a transformação ocorra de forma desastrosa. Eu, sendo um Animago, posso me transformar em um gato.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -379,7 +379,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well now. You will need to use Vera Verto to progress here. See if you might figure out a way to assemble a staircase by changing the properties of the objects around you.\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Muito bem. Você precisará usar o Vera Verto para prosseguir. Veja se consegue descobrir uma maneira de montar uma escada alterando as propriedades dos objetos ao seu redor.\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -411,7 +411,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" To cast the spell, you must select it from your spell menu by pressing ² and cast it by double clicking ⌠ while looking at the object you wish to transform.\\n Remember what I told you; look for blue flares when figuring out what objects you may transfigure.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Para lançar o feitiço, você deve selecioná-lo no menu de feitiços pressionando ² e lançá-lo clicando duas vezes em ⌠ enquanto olha para o objeto que deseja transformar. Lembre-se do que eu disse: procure por brilhos azuis ao descobrir quais objetos você pode transfigurar.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -443,7 +443,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" These enchanted suits of armour are quite too tough to be beaten using only the spells Professor Lupin has taught you. I'm afraid you will need to be smart about this. Use Stupefy or Bombarda Maxima to stun the enemies and transfigure them to a harmless shape while they are startled.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Essas armaduras encantadas são muito resistentes para serem derrotadas usando apenas os feitiços que o Professor Lupin lhe ensinou. Receio que você precisará usar a inteligência. Use Estupefaça ou Bombarda Máxima para atordoar os inimigos e transformá-los em uma forma inofensiva enquanto estiverem assustados.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -475,10 +475,10 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Gryffindor.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Ravenclaw.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Slytherin.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Hufflepuff.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excelente trabalho! 20 pontos para Grifinória.\\n\\n Você desbloqueou o amuleto Vera Verto e agora poderá transfigurar certos objetos. Sua próxima aula será Defesa Contra as Artes das Trevas com o Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excelente trabalho! 20 pontos para Corvinal.\\n\\n Você desbloqueou o amuleto Vera Verto e agora poderá transfigurar certos objetos. Sua próxima aula será Defesa Contra as Artes das Trevas com o Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excelente trabalho! 20 pontos para Sonserina.\\n\\n Você desbloqueou o amuleto Vera Verto e agora poderá transfigurar certos objetos. Sua próxima aula será Defesa Contra as Artes das Trevas com o Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excelente trabalho! 20 pontos para Lufa-Lufa.\\n\\n Você desbloqueou o amuleto Vera Verto e agora poderá transfigurar certos objetos. Sua próxima aula será Defesa Contra as Artes das Trevas com o Professor Lupin.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -514,20 +514,20 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Are you ready to head back to the classroom?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Você está pronto para voltar para a sala de aula?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Travel back to classroom\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTransfigurationClassroom_____","convOption","i"]}
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"Transfiguration Classroom\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTransfigurationClassroom_____","convOption","i"]}
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ End Memory\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"Dumbledore's Office\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Retorno à sala de aula\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTransfigurationClassroom_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"Sala de aula da Transfiguração\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTransfigurationClassroom_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Fim da memória\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"Escritório de Dumbledore\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] run tag @s add hasSpokenToMcGonagallAfterVeraVertoLesson
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ I want to stay here for a bit\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ Quero ficar aqui por um tempo.\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 
 #-------------------------------
@@ -552,17 +552,17 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The emblematic animal of Gryffindor is a lion, and its colours are scarlet and gold.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" O animal emblemático da Grifinória é o leão, e suas cores são o escarlate e o dourado.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Who founded Gryffindor House?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Quem fundou a casa Grifinória?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"I have another question\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"Tenho outra pergunta.\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 
 #-------------------------------
@@ -587,7 +587,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We'll begin shortly. Just wait for everyone to arrive.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Começaremos em breve. Aguarde até que todos cheguem.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

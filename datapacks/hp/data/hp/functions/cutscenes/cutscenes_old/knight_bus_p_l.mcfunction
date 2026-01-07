@@ -15,8 +15,8 @@ execute as @s[scores={cutSceneTimer=21..95}] run tp @s 2331.72 75.12 -790.98 314
 execute as @s[scores={cutSceneTimer=75}] run function hp:cutscenes/fade_in
 
 execute as @s[scores={cutSceneTimer=85}] run title @s times 15 35 15
-execute as @s[scores={cutSceneTimer=85}] run title @s subtitle ["",{"text":"Leaky Cauldron","bold":true,"color":"gold"}]
-execute as @s[scores={cutSceneTimer=85}] run title @s title {"text":"Traveling to","color":"gray"}
+execute as @s[scores={cutSceneTimer=85}] run title @s subtitle ["",{"text":"Caldeirão Furado","bold":true,"color":"gold"}]
+execute as @s[scores={cutSceneTimer=85}] run title @s title {"text":"Viajar para","color":"gray"}
 execute as @s[scores={cutSceneTimer=96..250}] run tp @s 2860.32 66.34 732.19 -47.26 27.5
 
 execute as @s[scores={cutSceneTimer=180}] run function hp:cutscenes/fade_out

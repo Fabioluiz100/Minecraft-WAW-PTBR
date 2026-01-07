@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm studying for my O.W.L.s. I’m doing around eight hours a day. Eight or nine. I'm getting an hour in before breakfast everyday. Eight's my average. I can do ten on a good weekend day. I did nine and a half on Monday. Not so good on Tuesday — only seven and a quarter. Then on Wednesday ... \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Estou estudando para os meus N.O.M.s. Estou estudando cerca de oito horas por dia. Oito ou nove. Consigo estudar uma hora antes do café da manhã todos os dias. Oito é a minha média. Consigo estudar dez horas em um bom dia de fim de semana. Estudei nove horas e meia na segunda-feira. Não tão bem na terça-feira — apenas sete horas e quinze minutos. Aí na quarta-feira... \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -35,7 +35,7 @@ execute if entity @s[tag=use] run tag @s add longHeader
 ################################
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≥ Goodbye\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adeus\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 

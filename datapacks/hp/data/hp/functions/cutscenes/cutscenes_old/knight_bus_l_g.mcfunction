@@ -16,7 +16,7 @@ execute as @s[scores={cutSceneTimer=75}] run function hp:cutscenes/fade_in
 
 execute as @s[scores={cutSceneTimer=85}] run title @s times 15 35 15
 execute as @s[scores={cutSceneTimer=85}] run title @s subtitle ["",{"text":"Godric's Hollow","bold":true,"color":"gold"}]
-execute as @s[scores={cutSceneTimer=85}] run title @s title {"text":"Traveling to","color":"gray"}
+execute as @s[scores={cutSceneTimer=85}] run title @s title {"text":"Viajar para","color":"gray"}
 execute as @s[scores={cutSceneTimer=96..250}] run tp @s 6832.40 47.97 3106.60 236.26 34.40
 
 execute as @s[scores={cutSceneTimer=180}] run function hp:cutscenes/fade_out

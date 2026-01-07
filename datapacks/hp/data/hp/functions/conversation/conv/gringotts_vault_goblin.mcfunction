@@ -35,8 +35,8 @@ execute if entity @s[tag=use] run tag @s add longHeader
 ################################
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√ Travel out of the vaults\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"Gringotts Track\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√ Viaje para fora dos cofres\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"Pista Gringotts\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
 #-------------------------------
 
 #===============================

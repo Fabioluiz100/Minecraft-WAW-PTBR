@@ -6,7 +6,7 @@ kill @e[type=minecraft:armor_stand,tag=Brick,tag=!diagonAlleyBrick,distance=..10
 tag @e[type=minecraft:armor_stand,tag=Brick,tag=diagonAlleyBrick,distance=..10,x=2848,y=56,z=800,limit=1] add oldDiagonAlleyBrick
 
 # Summon baseline Armorstand. Used for wall positioning & TPS counter
-execute positioned 2848 56 800 run summon minecraft:armor_stand ~ ~ ~ {Marker:1,NoGravity:1,Invisible:1,CustomName:"{\"text\":\"AlleyPosition\"}",Tags:["Brick","Opening"]}
+execute positioned 2848 56 800 run summon minecraft:armor_stand ~ ~ ~ {Marker:1,NoGravity:1,Invisible:1,CustomName:"{\"text\":\"AlleyPosition\"}",Tags:["Brick","Abrindo"]}
 
 # Clear wall
 fill 2848 59 798 2849 56 798 minecraft:barrier

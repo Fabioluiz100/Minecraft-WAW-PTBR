@@ -4,10 +4,10 @@
 tag @s add inQuestBook
 playsound minecraft:custom.ui.book.open master @a ~ ~ ~ 1 1
 
-execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Quest Log","bold":true,"color":"gray"}
-execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Quest Log","bold":true,"color":"gray"}
-execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Quest Log","bold":true,"color":"gray"}
-execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Quest Log","bold":true,"color":"gray"}
+execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Registro de Missões","bold":true,"color":"gray"}
+execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Registro de Missões","bold":true,"color":"gray"}
+execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Registro de Missões","bold":true,"color":"gray"}
+execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Registro de Missões","bold":true,"color":"gray"}
 tag @s add showBossbarHeader
 function hp:misc/update_bossbars
 

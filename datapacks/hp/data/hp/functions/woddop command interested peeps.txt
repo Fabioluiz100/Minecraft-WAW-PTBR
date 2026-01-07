@@ -1,3 +1,5 @@
-We'd prefer that you don't directly copy these functions for use in your own maps. 
-Atleast not in their entirety. Of course you can see how I solved various problems and take 
-snippets. Cheers.
+Preferimos que você não copie essas funções diretamente para usar em seus próprios mapas.
+
+Pelo menos não na íntegra. Claro que você pode ver como resolvi vários problemas e aproveitar trechos delas.
+
+Abraços.

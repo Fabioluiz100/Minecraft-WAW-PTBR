@@ -16,7 +16,7 @@ replaceitem entity @s[scores={selectedSlot=2..9}] hotbar.0 minecraft:iron_sword{
 function hp:draw_hotbar/draw_quickslots
 
 # The 9 first stages are in their own function, so it'll be more performant when you reach the final hotbar stage
-replaceitem entity @s[scores={hotbar_stage=10},tag=!showMana] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Inventory\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:59,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=10},tag=!showMana] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Inventário\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:59,Unbreakable:1b,qDetect:1b}
 execute as @s[scores={hotbar_stage=10..},tag=showingMana] run function hp:draw_hotbar/draw_hotbar_mana
 execute as @s[scores={hotbar_stage=..9}] run function hp:draw_hotbar/draw_hotbar_stages
 
@@ -26,10 +26,10 @@ replaceitem entity @s[tag=!unlockedSpells] hotbar.6 minecraft:golden_hoe{Unbreak
 
 # Input F
 scoreboard players set @s tmp 0
-execute if entity @e[tag=hover,tag=convNPC] store success score @s tmp run replaceitem entity @s hotbar.7 minecraft:golden_hoe{Damage:30,Unbreakable:1b,display:{Name:"{\"text\":\"Settings\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
-execute if entity @e[tag=hover,tag=!convNPC,tag=!noInteraction,tag=!largeChest,tag=!smallChest] store success score @s tmp run replaceitem entity @s hotbar.7 minecraft:golden_hoe{Damage:29,Unbreakable:1b,display:{Name:"{\"text\":\"Settings\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
-execute if entity @e[tag=hover,tag=chest,tag=!isDroppedItem] store success score @s tmp run replaceitem entity @s hotbar.7 minecraft:golden_hoe{Damage:27,Unbreakable:1b,display:{Name:"{\"text\":\"Settings\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
-replaceitem entity @s[scores={tmp=0}] hotbar.7 minecraft:golden_hoe{Damage:31,Unbreakable:1b,display:{Name:"{\"text\":\"Settings\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
+execute if entity @e[tag=hover,tag=convNPC] store success score @s tmp run replaceitem entity @s hotbar.7 minecraft:golden_hoe{Damage:30,Unbreakable:1b,display:{Name:"{\"text\":\"Configurações\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
+execute if entity @e[tag=hover,tag=!convNPC,tag=!noInteraction,tag=!largeChest,tag=!smallChest] store success score @s tmp run replaceitem entity @s hotbar.7 minecraft:golden_hoe{Damage:29,Unbreakable:1b,display:{Name:"{\"text\":\"Configurações\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
+execute if entity @e[tag=hover,tag=chest,tag=!isDroppedItem] store success score @s tmp run replaceitem entity @s hotbar.7 minecraft:golden_hoe{Damage:27,Unbreakable:1b,display:{Name:"{\"text\":\"Configurações\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
+replaceitem entity @s[scores={tmp=0}] hotbar.7 minecraft:golden_hoe{Damage:31,Unbreakable:1b,display:{Name:"{\"text\":\"Configurações\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,qDetect:1b} 1
 
 # Input Q
 scoreboard players set @s tmp 0
@@ -68,7 +68,7 @@ execute as @s[tag=showTrackedQuest,tag=!showingTrackedQuest,tag=!playingQuestAni
 execute as @s[tag=showingTrackedQuest,tag=playingQuestAnim] run function hp:animation/quest_anim_exit
 execute as @s[tag=!showingTrackedQuest,tag=playingQuestAnim] run function hp:animation/quest_anim_enter
 
-replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim] hotbar.1 minecraft:golden_hoe{display:{Name:"{\"text\":\"Marauders Map\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim] hotbar.1 minecraft:golden_hoe{display:{Name:"{\"text\":\"Mapa dos Saqueadores\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}
 replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim,tag=!inLumosTransitionArea,tag=!inTravelPoint,tag=!stunnedByMandrake,tag=!stunnedByDarkSpirit,tag=!isDrowning,scores={damageOverlay=0},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:23}}]}] weapon.offhand minecraft:carrot_on_a_stick{display:{Name:"{\"text\":\" \",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:23,Unbreakable:1b,qDetect:1b,fDetect:1b}
 replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim,tag=!inLumosTransitionArea,tag=!inTravelPoint,tag=!stunnedByMandrake,tag=!stunnedByDarkSpirit,tag=!isDrowning,scores={damageOverlay=1},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:15}}]}] weapon.offhand minecraft:carrot_on_a_stick{display:{Name:"{\"text\":\" \",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:15,Unbreakable:1b,qDetect:1b,fDetect:1b}
 replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim,tag=!inLumosTransitionArea,tag=!inTravelPoint,tag=!stunnedByMandrake,tag=!stunnedByDarkSpirit,tag=!isDrowning,scores={damageOverlay=2},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:16}}]}] weapon.offhand minecraft:carrot_on_a_stick{display:{Name:"{\"text\":\" \",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:16,Unbreakable:1b,qDetect:1b,fDetect:1b}
@@ -84,10 +84,10 @@ tag @s[scores={questRot2=..-40}] add above
 execute as @s[tag=!questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim,tag=!above,tag=!below] if score @s lastRegion = @s questRegion run function hp:draw_hotbar/draw_hotbar_quest_direction
 execute as @s[tag=!questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim,tag=above] if score @s lastRegion = @s questRegion run function hp:draw_hotbar/draw_hotbar_quest_direction_above
 execute as @s[tag=!questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim,tag=below] if score @s lastRegion = @s questRegion run function hp:draw_hotbar/draw_hotbar_quest_direction_below
-execute as @s[tag=questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim] if score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Quest Log\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:94,Unbreakable:1b,qDetect:1b}
-execute as @s[tag=showingTrackedQuest,tag=!playingQuestAnim] unless score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Quest Log\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:95,Unbreakable:1b,qDetect:1b}
+execute as @s[tag=questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim] if score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Registro de Missões\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:94,Unbreakable:1b,qDetect:1b}
+execute as @s[tag=showingTrackedQuest,tag=!playingQuestAnim] unless score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Registro de Missões\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:95,Unbreakable:1b,qDetect:1b}
 
-replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim] hotbar.2 minecraft:golden_hoe{display:{Name:"{\"text\":\"Quest Log\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim] hotbar.2 minecraft:golden_hoe{display:{Name:"{\"text\":\"Registro de Missões\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}
 
 # Quest icon state
 replaceitem entity @s[tag=showingTrackedQuest,tag=!playingQuestAnim,tag=questExclamation,tag=!playingQuestIconAnim,scores={damageOverlay=0},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:24}}]}] weapon.offhand minecraft:carrot_on_a_stick{Damage:24,display:{Name:"{\"text\":\" \"}"},HideFlags:63,Unbreakable:1,fDetect:1b} 1

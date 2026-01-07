@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The first clue is found, though four yet remain; \\n Follow these clues, for each shall explain; \\n\\n Where next to go in this hunt for riches; \\n Pursued by determined wizards and witches \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A primeira pista foi encontrada, embora ainda faltem quatro; siga essas pistas, pois cada uma delas explicará tudo; \\n\\n Para onde ir agora nessa busca por riquezas? Perseguidos por feiticeiros e bruxas determinados. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -60,7 +60,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" \\n For this first of clues you must go to a place; \\n Where wisdom and wit the occupants grace \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" \\n Para esta primeira pista, você precisa ir a um lugar; \\n Onde a sabedoria e o humor são a graça dos ocupantes \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

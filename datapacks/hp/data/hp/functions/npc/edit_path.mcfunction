@@ -1,5 +1,5 @@
 execute as @e[type=minecraft:endermite,tag=npcPathPoint] at @s unless block ~ 0 ~ minecraft:dropper run function hp:npc/edit_path_setup
-execute as @e[type=minecraft:endermite,tag=npcPathPoint] at @s if block ~ 0 ~ minecraft:dropper run tellraw @a {"text":"There already is a path point on this block. I can make it so multiple points can be on the same block, but it's kind of difficult :/","color":"red"}
+execute as @e[type=minecraft:endermite,tag=npcPathPoint] at @s if block ~ 0 ~ minecraft:dropper run tellraw @a {"text":"Já existe um ponto de caminho neste bloco. Posso fazer com que vários pontos possam estar no mesmo bloco, mas é um pouco difícil./","color":"red"}
 execute as @e[type=minecraft:endermite,tag=npcPathPoint] at @s if block ~ 0 ~ minecraft:dropper run kill @s
 
 

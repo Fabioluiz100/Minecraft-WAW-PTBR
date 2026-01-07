@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" How nice to see you in the physical world at last. My name is \\n \"},{\"text\":\"Professor Trelawney\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Que bom finalmente te ver pessoalmente. Meu nome é \\n \"},{\"text\":\"Professor Trelawney\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -62,26 +62,26 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I can tell that you could be a great Seer. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Posso afirmar que você tem potencial para ser um ótimo vidente. \\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Divination\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre Adivinhação\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Can you predict something for me?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Você pode me prever algo?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ What makes a great Seer?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤O que define um grande vidente?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ You're related to Cassandra Trelawney?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Você é parente da Cassandra Trelawney?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≥ Goodbye\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adeus\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 
@@ -105,7 +105,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" So, you are interested in the art of Divination? Of course. Naturally, I knew you would ask that. I foresaw it. Allow me to enlighten you: Divination, the most difficult of all magical arts. I must warn you at the outset that if you do not have the Sight, there is very little I will be able to teach you. Books can take you only so far in this field.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Então, você se interessa pela arte da Adivinhação? Claro. Naturalmente, eu sabia que você perguntaria isso. Eu previ. Permita-me esclarecer: Adivinhação, a mais difícil de todas as artes mágicas. Devo avisá-lo de antemão que, se você não possui a Visão, há muito pouco que eu poderei lhe ensinar. Os livros só podem levá-lo até certo ponto neste campo.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -138,7 +138,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Inner Eye does not See upon command! And yet ... I certainly could. But one does not parade the fact that one is All-Knowing. I frequently act as though I am not possessed of the Inner Eye, so as not to make others nervous.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" O Olho Interior não vê por comando! E, no entanto... eu certamente poderia. Mas ninguém sai por aí alardeando que é Onisciente. Frequentemente ajo como se não possuísse o Olho Interior, para não deixar os outros nervosos.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -170,7 +170,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" In Divination not all can be taught; some are simply born with the Sight and some are not. Young Mrs. Brown and Mrs. Patil make great Seers. They have the Sight, and they place great faith in my predictions. That is also very important. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Na adivinhação, nem tudo pode ser ensinado; alguns simplesmente nascem com o dom da visão, outros não. As jovens Sra. Brown e Sra. Patil são ótimas videntes. Elas têm o dom da visão e depositam muita fé nas minhas previsões. Isso também é muito importante. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -203,7 +203,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" On the other hand, Professor McGonagall and that Mrs. Granger are not so blessed. They may think me a fraud and call Divination an imprecise form of magic. You and I both know the truth. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Por outro lado, a Professora McGonagall e a Sra. Granger não têm a mesma sorte. Podem me considerar uma fraude e chamar a Adivinhação de uma forma imprecisa de magia. Você e eu sabemos a verdade. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -236,7 +236,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I am. I am the great-great-granddaughter of the celebrated Seer Cassandra Trelawney. Actually, I'm also the first in my family since Cassandra to be possessed of the Second Sight. But these things often skip ... er ... three generations. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Sim, sou a tataraneta da célebre vidente Cassandra Trelawney. Aliás, sou também a primeira da minha família, desde Cassandra, a possuir a Segunda Visão. Mas essas coisas costumam pular... er... três gerações. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -269,7 +269,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Mrs. Smith? Do you know, I really didn't think she had the Sight. And of course, you know, that if a student does not possess the Sight there is very little I can do to teach you. Books can only take you so far. Many witches and wizards, talented though they are in the area of loud bangs and smells and sudden disappearings, are yet unable to penetrate the veiled mysteries of the future.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Sra. Smith? Sabe, eu realmente não achava que ela tivesse a Visão. E, claro, você sabe que, se um aluno não possui a Visão, há muito pouco que eu possa fazer para ensiná-lo. Os livros só podem levá-lo até certo ponto. Muitas bruxas e bruxos, por mais talentosos que sejam na área de estrondos, cheiros e desaparecimentos repentinos, ainda são incapazes de penetrar os mistérios velados do futuro.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -302,7 +302,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Yet the most remarkable thing has happened. It would seem that Mrs. Smith's ludicrous prediction has come true ... Of course - I foresaw it too, being myself possessed by the Inner Eye ... Even so, it seems I'll have to reevaluate my opinion of her prophesying abilities.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" No entanto, algo extraordinário aconteceu. Parece que a previsão absurda da Sra. Smith se concretizou... Claro, eu também a previ, pois sou possuído pelo Olho Interior... Mesmo assim, parece que terei que reavaliar minha opinião sobre suas habilidades proféticas.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

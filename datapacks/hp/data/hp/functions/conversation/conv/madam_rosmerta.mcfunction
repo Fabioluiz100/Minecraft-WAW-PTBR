@@ -27,25 +27,25 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hello dear. I'm Madam Rosmerta. Welcome to the Three Broomsticks Inn. What can I get you? \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Olá, querido(a). Sou Madame Rosmerta. Bem-vindo(a) à Estalagem Três Vassouras. O que posso lhe servir? \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≡ Show me what you have for sale\"}",Tags:["_____buy_____","_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≡ Mostre-me o que você tem à venda.\"}",Tags:["_____buy_____","_____Normal_____","_____click_____","convOption","i"]}
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Have you heard any rumours lately?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Você ouviu algum boato ultimamente?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about the Three Broomsticks Inn\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre a Estalagem Três Vassouras\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Hogsmeade\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Fale-me sobre Hogsmeade.\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≥ Goodbye\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≥ Adeus\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 
@@ -69,7 +69,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well, it's a bit smoky, and a bit worn down. But it's warm and welcoming. Allegedly the Three Broomsticks is as old as Hogsmeade itself. People like to say that the village founder, Hengist of Woodcroft, lived here during medieval times. The Inn was used as the wizards' headquarters during the goblin rebellion in the 17th century. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Bem, é um pouco esfumaçado e um pouco desgastado. Mas é aconchegante e acolhedor. Dizem que o Três Vassouras é tão antigo quanto a própria Hogsmeade. As pessoas gostam de dizer que o fundador da vila, Hengist de Woodcroft, viveu aqui durante a Idade Média. A estalagem foi usada como quartel-general dos feiticeiros durante a rebelião dos goblins no século XVII. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -101,7 +101,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Me personally? I've worked here for more than twenty years now. Started as a barmaid, now I'm the proprietor.  \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Eu, pessoalmente? Trabalho aqui há mais de vinte anos. Comecei como garçonete e agora sou a proprietária.  \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -132,7 +132,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" This village is as old as Hogwarts Castle. The students and staff of Hogwarts have visited for hundreds of years. A lot of them come in here to get a drink and catch the warmth. The village wouldn't be what it is without Hogwarts. Business certainly wouldn't. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Esta vila é tão antiga quanto o Castelo de Hogwarts. Alunos e funcionários de Hogwarts a visitam há centenas de anos. Muitos vêm aqui para beber algo e aproveitar o calor. A vila não seria o que é sem Hogwarts. E o comércio, certamente, também não. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -163,7 +163,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I know all about Hogsmeade and the people here. I like gossip you see. When you work in an inn like this you overhear a rumour or two. Let me see... \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Conheço bem Hogsmeade e as pessoas daqui. Gosto de fofocas, sabe? Quando se trabalha numa estalagem como esta, a gente acaba ouvindo um boato ou outro. Deixa eu ver... \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -204,7 +204,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Earnest Potts has been talking of some special urn for ages now. Who knows, you might be able to help. You should ask him about it. Just walk down High Street and you should find him on your left near the end of the street. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Earnest Potts vem falando há tempos sobre uma urna especial. Quem sabe, você pode ajudar. Você deveria perguntar a ele sobre isso. Basta caminhar pela High Street e você o encontrará à sua esquerda, perto do final da rua. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -236,7 +236,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You know Aberforth? The innkeeper at the Hog's Head Inn. He's not a man of many words, but he told me that he's been hearing strange noises from the Shrieking Shack. You should go and ask him about it. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Você conhece o Aberforth? O dono da Estalagem Cabeça de Javali. Ele não é de muitas palavras, mas me disse que tem ouvido barulhos estranhos vindos da Casa dos Gritos. Você devia ir lá perguntar para ele. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -269,7 +269,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" They're awfully busy at the post office this time of year. I'm sure you'd be rewarded handsomely if you offered to lighten the workload.  \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Nesta época do ano, os correios ficam extremamente movimentados. Tenho certeza de que você seria muito bem recompensado se se oferecesse para aliviar a carga de trabalho.  \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -301,7 +301,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Zonko's Joke Shop is popular with the Hogwarts students, but poor Zonko has to compete with the Weasley twins and their shop in Diagon Alley now. He's not too chuffed about it. Perhaps you can do something for him. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A loja de artigos de brincadeira do Zonko é popular entre os alunos de Hogwarts, mas o pobre Zonko agora tem que competir com os gêmeos Weasley e sua loja no Beco Diagonal. Ele não está nada contente com isso. Talvez você possa fazer algo por ele. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -334,7 +334,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I think some young boy just outside lost his toad. And I gather it's not the first time either. Perhaps you can help him. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Acho que um menino perdeu seu sapo ali perto. E pelo que entendi, não é a primeira vez. Talvez você possa ajudá-lo. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -365,7 +365,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I think some students are building a snowman just through the gate across the street. Snow is easy to come by here in Hogsmeade, but the rest of the needed supplies can be more tricky. Perhaps they'd appreciate your help. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Acho que alguns alunos estão construindo um boneco de neve logo ali, do outro lado do portão. Neve é ​​fácil de encontrar aqui em Hogsmeade, mas os outros materiais necessários podem ser mais difíceis de achar. Talvez eles agradeçam sua ajuda. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
